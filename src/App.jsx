@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter , Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import PageTransition from './components/PageTransition'
@@ -9,7 +9,7 @@ import Contact from './pages/Contact'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <PageTransition>
         <Routes>
@@ -20,6 +20,6 @@ export default function App() {
         </Routes>
       </PageTransition>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
